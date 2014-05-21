@@ -18,4 +18,4 @@ Checkout `example` for more.
 
 ## Copyright
 
-Copyright (c) 2014 h0kx. See LICENSE for details.
+Copyright (c) 2014 h0kx. See [LICENSE](http://l.h0kx.me/) for details.
