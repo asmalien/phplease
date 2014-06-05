@@ -2,8 +2,6 @@
 
 Learn about the xREL API at the [documentation](http://www.xrel.to/wiki/1681/API.html).
 
-Questions, comments? b@h0kx.me
-
 ## Example
 
     # Load the latest releases
