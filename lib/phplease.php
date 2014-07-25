@@ -68,7 +68,7 @@ class PHPlease {
 
     # Shows how many calls the user (if an OAuth session is present) or the IP address (otherwise) has left before none will be answered.
     public function rate_limit_status() {
-        return $this->_client->signed('user/rate_limit_status');
+        return ($this->authd_user()) ? $this->_client->signed('user/rate_limit_status') : $this->_client->unsigned('user/rate_limit_status');
     }
 
     # Returns a list of all the current user's favorite lists.
