@@ -1,9 +1,12 @@
 <?php
+
+namespace PHPlease;
+
 // vim: foldmethod=marker
 
 /* Generic exception class
  */
-class OAuthException extends Exception {
+class OAuthException extends \Exception {
   // pass
 }
 

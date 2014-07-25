@@ -1,6 +1,6 @@
 <?php
 
-require_once('phpleaseauth.php');
+namespace PHPlease;
 
 class PHPlease {
 	# PHPleaseAuth instance

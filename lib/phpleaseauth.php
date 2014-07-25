@@ -1,6 +1,6 @@
 <?php
 
-require_once('oauth.php');
+namespace PHPlease;
 
 class PHPleaseAuth {
     # API Endpoint (Host)
@@ -33,7 +33,7 @@ class PHPleaseAuth {
         if(!empty($token['oauth_token']) && !empty($token['oauth_token_secret'])) {
             $this->_token = new OAuthConsumer($token['oauth_token'], $token['oauth_token_secret']);
         } else {
-            throw new Exception($response);
+            throw new \Exception($response);
         }
 
         return $token;
@@ -55,7 +55,7 @@ class PHPleaseAuth {
         if(!empty($token['oauth_token']) && !empty($token['oauth_token_secret'])) {
             $this->_token = new OAuthConsumer($token['oauth_token'], $token['oauth_token_secret']);
         } else {
-            throw new Exception($response);
+            throw new \Exception($response);
         }
 
         return $token;
